@@ -1,0 +1,80 @@
+//
+// Author: cangyingzhijia@126.com
+// Date: 2014-06-25
+//
+//
+
+#ifndef HTTP_SERVER_HTTP_STATUS_H_
+#define HTTP_SERVER_HTTP_STATUS_H_
+
+namespace common {
+namespace http_server {
+
+enum HttpStatus{
+    HTTP_STATUS_ERROR         = 0,
+    HTTP_STATUS_PAUSE         = 1,
+    HTTP_STATUS_FATAL         = 2,
+    HTTP_STATUS_USER          = 3,
+    HTTP_STATUS_DATA_TOO_LONG = 4,
+    HTTP_STATUS_OK            = 200,
+    // http status 100
+    HTTP_STATUS_100           = 100,
+    HTTP_STATUS_CONTINUE      = 100,
+    HTTP_STATUS_SWITCH_PROTO  = 101,
+    HTTP_STATUS_PROCESSING    = 102,
+    HTTP_STATUS_URI_TOOLONG   = 122,
+    // http status 200
+    HTTP_STATUS_200           = 200,
+    HTTP_STATUS_CREATED       = 201,
+    HTTP_STATUS_ACCEPTED      = 202,
+    HTTP_STATUS_NAUTHINFO     = 203,
+    HTTP_STATUS_NOCONTENT     = 204,
+    HTTP_STATUS_RSTCONTENT    = 205,
+    HTTP_STATUS_PARTIAL       = 206,
+    HTTP_STATUS_MSTATUS       = 207,
+    HTTP_STATUS_IMUSED        = 226,
+    // http status 300
+    HTTP_STATUS_300           = 300,
+    HTTP_STATUS_MCHOICE       = 300,
+    HTTP_STATUS_MOVEDPERM     = 301,
+    HTTP_STATUS_FOUND         = 302,
+    HTTP_STATUS_SEEOTHER      = 303,
+    HTTP_STATUS_NOTMOD        = 304,
+    HTTP_STATUS_USEPROXY      = 305,
+    HTTP_STATUS_SWITCHPROXY   = 306,
+    HTTP_STATUS_TMPREDIR      = 307,
+    // http status 400
+    HTTP_STATUS_400           = 400,
+    HTTP_STATUS_BADREQ        = 400,
+    HTTP_STATUS_UNAUTH        = 401,
+    HTTP_STATUS_PAYREQ        = 402,
+    HTTP_STATUS_FORBIDDEN     = 403,
+    HTTP_STATUS_NOTFOUND      = 404,
+    HTTP_STATUS_METHNALLOWED  = 405,
+    HTTP_STATUS_NACCEPTABLE   = 406,
+    HTTP_STATUS_PROXYAUTHREQ  = 407,
+    HTTP_STATUS_TIMEOUT       = 408,
+    HTTP_STATUS_CONFLICT      = 409,
+    HTTP_STATUS_GONE          = 410,
+    HTTP_STATUS_LENREQ        = 411,
+    HTTP_STATUS_PRECONDFAIL   = 412,
+    HTTP_STATUS_ENTOOLARGE    = 413,
+    HTTP_STATUS_URITOOLARGE   = 414,
+    HTTP_STATUS_UNSUPPORTED   = 415,
+    HTTP_STATUS_RANGENOTSC    = 416,
+    HTTP_STATUS_EXPECTFAIL    = 417,
+    HTTP_STATUS_IAMATEAPOT    = 418,
+    // http status 500
+    HTTP_STATUS_500           = 500,
+    HTTP_STATUS_SERVERR       = 500,
+    HTTP_STATUS_NOTIMPL       = 501,
+    HTTP_STATUS_BADGATEWAY    = 502,
+    HTTP_STATUS_SERVUNAVAIL   = 503,
+    HTTP_STATUS_GWTIMEOUT     = 504,
+    HTTP_STATUS_VERNSUPPORT   = 505,
+    HTTP_STATUS_BWEXEED       = 509
+};
+
+}  // namespace http_serve= r
+}  // namespace common
+#endif //HTTP_SERVER_HTTP_STATUS_H_
